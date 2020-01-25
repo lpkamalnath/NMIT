@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/MandeeFontawesome.css">
+    <link rel="stylesheet" href="../Assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../Assets/css/slick.css">
+    <link rel="stylesheet" href="../Assets/css/default.css">
+    <link rel="stylesheet" href="../Assets/css/nice-select.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+    <link href="../Assets/css/Header.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+                    <div class="single-category sign-up-card">
+                        <div class="signup-tile">
+                            <h4>business details</h4>
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <form id="userData">
+                            <div class="form-row">
+                                <div class="form-group col-md-6 col-xs-12 pr-10">
+
+                                    <label for="inputBusiness">business name*</label>
+                                    <input type="text" class="form-control" id="inputBusiness" name="bname" style="text-transform:none" tabindex="1" required>
+                                    <div class="invalid-feedback" id="divbusinessName">
+                                        Business Name is mandatory.
+                                    </div>
+                                </div>
+                                <div id="state" class="form-group col-md-6 col-xs-12 pl-10">
+                                    <label>state*</label>
+                                    <div class="signup">
+                                        <select class="nice-select pdropdown" id="sts" name="stt" tabindex="5"></select>
+                                    </div>
+                                    <div class="invalid-feedback" id="divstate">
+                                        Please select the State.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 col-xs-12 pr-10">
+                                    <label for="inputPhone">mobile*</label>
+                                    <input type="tel" class="form-control" id="inputPhone" name="bphone" maxlength="10" onkeypress="return isNumberKey(event)" tabindex="2" required>
+                                    <div class="invalid-feedback" id="divmobile">
+                                        <span id="spnmobile"></span>
+                                    </div>
+                                </div>
+
+                                <div id="city" class="form-group col-md-6 col-xs-12  pl-10">
+                                    <label>city*</label>
+                                    <div class="signup">
+                                        <select id="st_city" class="nice-select pdropdown" name="bcity" tabindex="6"> </select>
+                                        <div class="invalid-feedback" id="divcity">
+                                            Please select the City.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 col-xs-12 pr-10">
+                                    <label for="inputEmail">email* </label>
+                                    <input type="email" class="form-control" id="inputEmail" style="text-transform:none" name="bemail" tabindex="3" required>
+                                    <div class="invalid-feedback" id="divemail">
+                                        <span id="spnEmail"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group col-md-6 col-xs-12 pl-10" id="regionDiv" style="display: none;">
+                                    <label>Region*</label>
+                                    <div class="signup">
+                                        <select class="nice-select pdropdown" id="ddlRegion" tabindex="7" required><option value="0">--Select--</option><option value="1015">Bangalore</option><option value="1003">Chennai</option><option value="1002">Madurai</option><option value="1001">Salem</option><option value="1004">Tiruchirappalli</option></select>
+                                        <div class="invalid-feedback" id="divRegion">
+                                            Please select the Region.
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div id="zipcode" class="form-group col-md-6 col-xs-12 pr-10">
+                                    <label for="inputZip">zip code*</label>
+                                    <input type="text" class="form-control" id="inputZip" name="bcode" maxlength="6" tabindex="8" onkeypress="return isNumberKey(event)" required>
+                                    <div class="invalid-feedback" id="divzipcode">
+                                        <span id="spnzip"></span>
+                                    </div>
+                                </div>
+                                <div id="address" class="form-group col-md-6 col-xs-12 pl-10">
+                                    <label for="inputAddress">address*</label>
+                                    <!--<div class="md-form">-->
+                                    <textarea id="inputAddress" class="form-control user-address" name="barea" rows="3" cols="20" style="text-transform:none" tabindex="4" required></textarea>
+                                    <!--</div>-->
+                                    <div class="invalid-feedback" id="divaddress">
+                                        Address is mandatory.
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="signup-btn" style="margin-top:15px!important">
+                                <button type="submit" id="btnsend" class="btn btn-text" tabindex="10">Save data</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <script src="../Assets/js/jquery3.2.1.js"></script>
+        <script src="../Assets/js/jquery.nice-select.min.js"></script>
+        <script src="../Assets/js/jquery.meanmenu.min.js"></script>
+        <script src="../Assets/js/vendor/Signup.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </body>
+</html>
